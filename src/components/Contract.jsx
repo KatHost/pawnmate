@@ -54,35 +54,43 @@ export default function Contact() {
           >
             <div className="space-y-6">
 
-              <div className="flex items-center gap-4 rounded-2xl bg-slate-800 p-5">
+              <a
+                href="mailto:artreeland@icloud.com"
+                className="group flex items-center gap-4 rounded-2xl bg-slate-800 p-5 hover:bg-slate-700 transition"
+                aria-label="Send email to artreeland@icloud.com"
+              >
                 <FaEnvelope className="text-cyan-400 text-xl" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-slate-400">
-                    artreeland@icloud.com
-                  </p>
+                  <p className="text-slate-400">artreeland@icloud.com</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-4 rounded-2xl bg-slate-800 p-5">
+              <a
+                href="tel:+27818635629"
+                className="group flex items-center gap-4 rounded-2xl bg-slate-800 p-5 hover:bg-slate-700 transition"
+                aria-label="Call +27 81 863 5629"
+              >
                 <FaPhone className="text-cyan-400 text-xl" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-slate-400">
-                    +27818635629
-                  </p>
+                  <p className="text-slate-400">+27818635629</p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-4 rounded-2xl bg-slate-800 p-5">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Johannesburg%2C+South+Africa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 rounded-2xl bg-slate-800 p-5 hover:bg-slate-700 transition"
+                aria-label="Open Johannesburg, South Africa in Google Maps"
+              >
                 <FaMapMarkerAlt className="text-cyan-400 text-xl" />
                 <div>
                   <h3 className="font-semibold">Location</h3>
-                  <p className="text-slate-400">
-                    Johannesburg, South Africa
-                  </p>
+                  <p className="text-slate-400">Johannesburg, South Africa</p>
                 </div>
-              </div>
+              </a>
 
             </div>
 

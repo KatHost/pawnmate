@@ -68,20 +68,31 @@ export default function Services() {
                 y: -10,
                 scale: 1.02,
               }}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-lg transition"
+              className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-lg transition overflow-hidden"
             >
 
-              <div className="text-cyan-400">
-                {service.icon}
-              </div>
+              <motion.div
+                className="w-full h-full"
+                animate={{ x: [ -6, 6, -6 ] }}
+                transition={{
+                  duration: 8 + index * 2,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                }}
+              >
+                <div className="text-cyan-400">
+                  {service.icon}
+                </div>
 
-              <h3 className="mt-6 text-2xl font-semibold text-white">
-                {service.title}
-              </h3>
+                <h3 className="mt-6 text-2xl font-semibold text-white">
+                  {service.title}
+                </h3>
 
-              <p className="mt-4 leading-7 text-slate-400">
-                {service.description}
-              </p>
+                <p className="mt-4 leading-7 text-slate-400">
+                  {service.description}
+                </p>
+              </motion.div>
 
             </motion.div>
 

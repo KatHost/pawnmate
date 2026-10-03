@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import viteLogo from './assets/vite.png'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from "./components/Navbar";
@@ -12,6 +12,7 @@ import Testimonials from "./components/Testimonials";
 import Contract from "./components/Contract";
 import Footer from "./components/Footer";
 import AnimatedBackground from './components/AnimatedBackground'
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Testimonials />
       <Contract />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

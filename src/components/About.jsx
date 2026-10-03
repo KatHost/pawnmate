@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "50+",
+    number: "6+",
     label: "Projects Completed",
   },
   {
-    number: "20+",
+    number: "10+",
     label: "Happy Clients",
   },
   {
@@ -53,9 +53,14 @@ export default function About() {
             results.
           </p>
 
-          <button className="mt-10 rounded-full bg-cyan-500 px-8 py-4 font-semibold transition hover:bg-cyan-400 hover:scale-105">
+          <a
+            href="https://kathost.github.io/pawnmate/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-block rounded-full bg-cyan-500 px-8 py-4 font-semibold transition hover:scale-105 hover:bg-cyan-400"
+            >
             Learn More
-          </button>
+          </a>
         </motion.div>
 
         <motion.div
