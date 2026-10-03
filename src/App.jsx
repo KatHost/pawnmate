@@ -13,7 +13,6 @@ import Contract from "./components/Contract";
 import Footer from "./components/Footer";
 import AnimatedBackground from './components/AnimatedBackground'
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import { Testimonials } from "./components/Testimonials";
 
 
 
